@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Pinpoint</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><b>PINPOINT</b></a>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <label for="sectors">Select sector:</label>
+                <ul class="list-group" style="border: none;">
+                    <li class="list-group-item"><button onclick="autom()"
+                            style="border: 0px;background-color: rgb(169, 230, 230);border-radius: 5px;">Automobiles</button>
+                    </li>
+                    <li class="list-group-item"><button onclick="hotelm()"
+                            style="border: 0px;background-color: rgb(169, 230, 230);border-radius: 5px;">Hotel
+                            Management</button></li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <div class="card mb" id="autom" style="display: none;border-radius: 25px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><button onclick="ashok()"
+                                style="border: 0px;background-color: antiquewhite;border-radius: 05px;">Ashok
+                                Leyland</button></h5>
+                        <p class="card-text">Ashok Leyland is an Indian multinational automobile company headquartered
+                            in Chennai, Tamil Nadu, India. It is owned by the Hinduja Group.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><button onclick="bajaj()"
+                                style="border: 0px;background-color: antiquewhite;border-radius: 05px;">Bajaj
+                                Motors</button></h5>
+                        <p class="card-text">Bajaj Auto Limited is an Indian multinational two-wheeler and three-wheeler
+                            manufacturing company based in Pune, Maharashtra.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><button onclick="eicher()"
+                                style="border: 0px;background-color: antiquewhite;border-radius: 05px;">Eicher Motors
+                                Limited (EML)</button></h5>
+                        <p class="card-text">Eicher Motors Limited (EML) is an Indian manufacturer of motorcycles and
+                            commercial vehicles. Eicher is the parent company of Royal Enfield, a manufacturer of
+                            middleweight motorcycles.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div class="card mb" id="hotelm" style="display: none;border-radius: 25px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><button onclick="expedia()"
+                                style="border: 0px;background-color: antiquewhite;border-radius: 05px;">Expedia
+                                Group</button></h5>
+                        <p class="card-text">Expedia Group, Inc. is an American online travel shopping company for
+                            consumer and small business travel. Its websites, which are primarily travel fare
+                            aggregators and travel metasearch engines, include Expedia.com, Vrbo (previously HomeAway),
+                            Hotels.com, Hotwire.com, Orbitz, Travelocity, trivago and CarRentals.com.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><button onclick="book()"
+                                style="border: 0px;background-color: antiquewhite;border-radius: 05px;">Booking Holdings
+                                Inc.</button></h5>
+                        <p class="card-text">Booking Holdings Inc. is an American company organized in Delaware and
+                            based in Norwalk, Connecticut, that owns and operates several travel fare aggregators and
+                            travel fare metasearch engines including namesake and flagship Booking.com, Priceline.com,
+                            Agoda.com, Kayak.com, Cheapflights, Rentalcars.com, Momondo, and OpenTable. It operates
+                            websites in about 40 languages and 200 countries.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><button onclick="amexp()"
+                                style="border: 0px;background-color: antiquewhite;border-radius: 05px;">American Express
+                                Global Business Travel</button></h5>
+                        <p class="card-text">American Express Global Business Travel (GBT) is a multinational travel and
+                            meetings program management company headquartered in Jersey City, New Jersey, US.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="row" id="emp1" style="display: none;margin-left: 100px;">
+        <div class="col-sm-5" style="border-radius: 25px;margin-top: 15px;" >
+            <div class="card mb-3" style="max-width: 540px;" >
+                <div class="row g-0">
+                    <div class="col-md-4 img">
+                        <img src="public/154.jpg" style="height: 150px;border-radius: 15px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee 1</h5>
+                            <p class="card-text">Designation.<br></p>
+                            <p class="card-text"><small class="text-muted">Contact Links</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card mb-3" style="max-width: 540px;" >
+                <div class="row g-0">
+                    <div class="col-md-4 img">
+                        <img src="public/154.jpg" style="height: 150px;border-radius: 15px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee 2</h5>
+                            <p class="card-text">Designation.<br></p>
+                            <p class="card-text"><small class="text-muted">Contact Links</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-5" style="border-radius: 25px;margin-top: 15px;" >
+            <div class="card mb-3" style="max-width: 540px;" >
+                <div class="row g-0">
+                    <div class="col-md-4 img">
+                        <img src="public/154.jpg" style="height: 150px;border-radius: 15px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee 3</h5>
+                            <p class="card-text">Designation.<br></p>
+                            <p class="card-text"><small class="text-muted">Contact Links</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card mb-3" style="max-width: 540px;" >
+                <div class="row g-0">
+                    <div class="col-md-4 img">
+                        <img src="public/154.jpg" style="height: 150px;border-radius: 15px;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee 4</h5>
+                            <p class="card-text">Designation.<br></p>
+                            <p class="card-text"><small class="text-muted">Contact Links</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+
+    <script>
+        function ashok() {
+    var x = document.getElementById("emp1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function bajaj() {
+    var x = document.getElementById("emp1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function eicher() {
+    var x = document.getElementById("emp1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function expedia() {
+    var x = document.getElementById("emp1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function amexp() {
+    var x = document.getElementById("emp1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function book() {
+    var x = document.getElementById("emp1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+  function autom() {
+    var x = document.getElementById("autom");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function hotelm() {
+    var x = document.getElementById("hotelm");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
